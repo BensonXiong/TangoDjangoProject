@@ -78,7 +78,8 @@ def index(request):
 	context_dict = {'categories':category_list}
 	return render(request,'rango/index.html',context_dict)
 
-
+def about(request):
+	return render(request,'rango/about.html',{})
 
 def user_login(request):
 	if request.method == 'POST':
